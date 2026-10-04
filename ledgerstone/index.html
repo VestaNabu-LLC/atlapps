@@ -1,16 +1,37 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ledgerstone</title><meta name="description" content="Read-only permission audit for Jira Cloud. Runs on Atlassian."><link rel="stylesheet" href="/style.css"></head><body>
-<nav><a href="/ledgerstone/">Ledgerstone</a><a href="/ledgerstone/support/">Support</a></nav><main>
-<h1>Ledgerstone: Permission Audit for Jira</h1>
-<p class="tag">See who can see and change what in Jira. Read-only. Runs on Atlassian.</p>
-<p>Ledgerstone gives Jira administrators a one-page answer to "is our Jira more open than we think?". It reads permission schemes, shared filters and dashboards, project roles, groups and accounts, flags anything reachable by anonymous visitors or by every logged-in user, and tracks the trend week over week.</p>
-<h2>Why admins use it</h2>
-<ul>
-<li><strong>Findings, not data dumps.</strong> One verdict line, with High and Medium findings you can act on.</li>
-<li><strong>Weekly trend.</strong> An unattended weekly run keeps the last twelve results and shows what changed.</li>
-<li><strong>Runs on Atlassian.</strong> Read-only scopes, no data leaves Atlassian, no third parties.</li>
-</ul>
-<h2>Get it</h2>
-<p>Coming soon to the Atlassian Marketplace. Free for sites with up to 10 users.</p>
-<footer>Published by VestaNabu LLC · <a href="/ledgerstone/support/">Support</a></footer>
-</main></body></html>
+<title>Ledgerstone: Permission Audit for Jira</title><meta name="description" content="See who can see and change what in Jira. Read-only. No data leaves Atlassian."><meta name="theme-color" content="#070a12">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%236366f1'/%3E%3Cpath d='M12 5 5 9l7 4 7-4-7-4Zm-7 8 7 4 7-4' fill='none' stroke='white' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/style.css"></head><body>
+<div class="sky" aria-hidden="true"><div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div></div>
+<nav><div class="nav-in"><a class="brand" href="/"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="m3 13 9 5 9-5"/></svg></span>atlapps<small>by VestaNabu</small></a><div class="nav-links"><a href="/">Apps</a><a href="/ledgerstone/" aria-current="page">Ledgerstone</a><a href="/ledgerstone/support/">Support</a></div></div></nav>
+<main>
+<section class="split"><div><span class="eyebrow"><i></i>Coming soon to the Atlassian Marketplace</span>
+<h1>See who can see <span class="grad">and change what</span> in Jira.</h1>
+<p class="lede">Ledgerstone gives Jira admins a one-page answer to "is our Jira more open than we think?", and tracks it week over week. Read-only. Nothing leaves Atlassian.</p>
+<div class="cta"><a class="btn primary" href="#pricing">Pricing →</a><a class="btn ghost" href="/ledgerstone/support/">Support</a></div></div>
+<div><div class="panel" role="img" aria-label="Illustration of the Ledgerstone overview"><div class="bar"><i></i><i></i><i></i></div><div class="in">
+<div class="verdict"><span class="dot bad"></span>2 high-risk findings need attention</div>
+<div class="kpis"><div class="kpi"><b>2</b><span>High</span></div><div class="kpi"><b>5</b><span>Medium</span></div><div class="kpi"><b>−3</b><span>vs last week</span></div></div>
+<div class="row"><span class="dot bad"></span>Browse projects: anyone on the web<em>scheme</em></div>
+<div class="row"><span class="dot bad"></span>Inactive account in an admin group<em>group</em></div>
+<div class="row"><span class="dot warn"></span>Filter shared with all logged-in users<em>filter</em></div>
+<div class="row"><span class="dot ok"></span>Project roles: no open grants<em>roles</em></div>
+</div></div><p class="caption">Illustration</p></div></section>
+<section class="reveal"><p class="kicker">What it checks</p><h2>Findings, not data dumps</h2><p class="sub">High means public or admin-level access for everyone. Medium means every logged-in user. One verdict line tells you where you stand.</p><div class="grid">
+<div class="card"><div class="icon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h5"/></svg></div><h3>Permission schemes</h3><p>Grants open to anonymous visitors or every logged-in user, project by project.</p></div>
+<div class="card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M4 5h16l-6 7v6l-4 2v-8L4 5Z"/></svg></div><h3>Shared filters & dashboards</h3><p>What's shared publicly or with everyone, and who owns it.</p></div>
+<div class="card"><div class="icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 4.5a3 3 0 0 1 0 6M21 20c0-2.6-1.6-4.8-4-5.6"/></svg></div><h3>Roles, groups & accounts</h3><p>Over-broad role assignments and inactive accounts still sitting in admin groups.</p></div>
+<div class="card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 6-6"/></svg></div><h3>Weekly trend</h3><p>An unattended weekly run keeps twelve results and shows what changed.</p></div>
+<div class="card"><div class="icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-5-5"/></svg></div><h3>Access check</h3><p>Pick a person and see what they can reach across your projects.</p></div>
+<div class="card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="4"/></svg></div><h3>Run it now</h3><p>Admins can refresh the audit on demand after making a fix.</p></div>
+</div></section>
+<section class="reveal"><p class="kicker">Trust</p><h2>Built to pass your security review</h2><div class="trust">
+<div><b>Read-only scopes</b><span>It cannot change Jira, by design.</span></div>
+<div><b>No egress</b><span>No outside servers or third parties.</span></div>
+<div><b>Your region</b><span>Stored in Atlassian's cloud with your site's data residency.</span></div>
+<div><b>Uninstall = gone</b><span>Removing the app deletes its stored data.</span></div></div></section>
+<section id="pricing" class="reveal"><p class="kicker">Pricing</p><h2>Simple pricing</h2><p class="sub">Billed through the Atlassian Marketplace. Every plan starts with a 30-day free trial.</p><div class="price">
+<div class="card"><h3>Small teams</h3><b>Free</b><p>Sites with up to 10 users.</p></div>
+<div class="card"><h3>Everyone else</h3><b>$1.50<small> / user / month</small></b><p>Same app, every feature. No tiers, no add-ons.</p></div></div></section></main>
+<footer><div class="foot"><span>© 2026 VestaNabu LLC</span><a href="/ledgerstone/">Ledgerstone</a><a href="/ledgerstone/support/">Support</a><a href="mailto:support@vestanabu.com">support@vestanabu.com</a><span class="r">Independent apps for Atlassian Cloud. Not affiliated with Atlassian.</span></div></footer>
+<script src="/site.js" defer></script></body></html>
