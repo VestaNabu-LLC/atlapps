@@ -8,7 +8,7 @@
 <section class="split"><div><span class="eyebrow"><i></i>Coming soon to the Atlassian Marketplace</span>
 <h1>See who can see <span class="grad">and change what</span> in Jira.</h1>
 <p class="lede">Ledgerstone gives Jira admins a one-page answer to "is our Jira more open than we think?", and tracks it week over week. Read-only. Nothing leaves Atlassian.</p>
-<div class="cta"><a class="btn primary" href="#pricing">Pricing →</a><a class="btn ghost" href="/ledgerstone/support/">Support</a></div></div>
+<div class="cta"><a class="btn primary" href="#pricing">Pricing →</a><a class="btn ghost" href="#getting-started">Getting started</a><a class="btn ghost" href="/ledgerstone/support/">Support</a></div></div>
 <div><div class="panel" role="img" aria-label="Illustration of the Ledgerstone overview"><div class="bar"><i></i><i></i><i></i></div><div class="in">
 <div class="verdict"><span class="dot bad"></span>2 high-risk findings need attention</div>
 <div class="kpis"><div class="kpi"><b>2</b><span>High</span></div><div class="kpi"><b>5</b><span>Medium</span></div><div class="kpi"><b>−3</b><span>vs last week</span></div></div>
@@ -22,7 +22,7 @@
 <div class="card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M4 5h16l-6 7v6l-4 2v-8L4 5Z"/></svg></div><h3>Shared filters & dashboards</h3><p>What's shared publicly or with everyone, and who owns it.</p></div>
 <div class="card"><div class="icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 4.5a3 3 0 0 1 0 6M21 20c0-2.6-1.6-4.8-4-5.6"/></svg></div><h3>Roles, groups & accounts</h3><p>Over-broad role assignments and inactive accounts still sitting in admin groups.</p></div>
 <div class="card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 6-6"/></svg></div><h3>Weekly trend</h3><p>An unattended weekly run keeps twelve results and shows what changed.</p></div>
-<div class="card"><div class="icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-5-5"/></svg></div><h3>Access check</h3><p>Pick a person and see what they can reach across your projects.</p></div>
+<div class="card"><div class="icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-5-5"/></svg></div><h3>Access check</h3><p>Shows exactly what Ledgerstone can read, as the app and as you, so a gap in coverage is never silent.</p></div>
 <div class="card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="4"/></svg></div><h3>Run it now</h3><p>Admins can refresh the audit on demand after making a fix.</p></div>
 </div></section>
 <section class="reveal"><p class="kicker">Trust</p><h2>Built to pass your security review</h2><div class="trust">
@@ -30,6 +30,23 @@
 <div><b>No egress</b><span>No outside servers or third parties.</span></div>
 <div><b>Your region</b><span>Stored in Atlassian's cloud with your site's data residency.</span></div>
 <div><b>Uninstall = gone</b><span>Removing the app deletes its stored data.</span></div></div></section>
+<section id="getting-started" class="reveal"><p class="kicker">Documentation</p><h2>Getting started</h2><p class="sub">From install to your first audit in about five minutes. You need to be a Jira administrator.</p>
+<ol class="steps">
+<li><b>Install</b><span>Install Ledgerstone on your Jira Cloud site from its Atlassian Marketplace listing. It asks only for read-only Jira permissions. Sites with up to 10 users are free; larger sites start with a 30-day free trial.</span></li>
+<li><b>Open it</b><span>In Jira, go to <strong>Settings</strong> (the gear icon) → <strong>Apps</strong> and choose <strong>Ledgerstone</strong> in the sidebar. The first time, Jira asks you to let Ledgerstone read Jira as you; accept to continue.</span></li>
+<li><b>First audit</b><span>With no audit on record, Ledgerstone takes the first snapshot as soon as the page opens ("Running your first audit"). It takes a few seconds. After that the audit runs on its own once a week.</span></li>
+<li><b>Fix and re-check</b><span>Start with High findings. After a fix, <strong>Refresh</strong> re-reads everything from Jira, and <strong>Run snapshot now</strong> runs the weekly audit immediately and adds the result to the trend.</span></li>
+</ol></section>
+<section id="reference" class="reveal"><p class="kicker">Documentation</p><h2>What each part shows</h2><div class="defs">
+<div><b>Overview</b><span>A verdict line; counts of High findings, Medium findings, items that could not be verified, and objects scanned; findings by area, each with an Open link to its tab. Below it, the weekly trend: the last 12 runs and what changed since the previous one.</span></div>
+<div><b>Permission schemes</b><span>Every permission scheme and the projects that use it, then each flagged grant: the permission and who it is granted to.</span></div>
+<div><b>Filters &amp; dashboards</b><span>Saved filters and dashboards shared publicly or with every logged-in user, with their owner and share settings.</span></div>
+<div><b>Roles, groups &amp; users</b><span>Project role assignments, administrative and default-access groups with their members and inactive accounts, and account counts by type.</span></div>
+<div><b>Access check</b><span>The same minimal reads made as the app (the weekly job) and as you (this page), so you can see what Ledgerstone can read and spot any gap in coverage.</span></div>
+<div><b>Ratings</b><span><strong>High</strong>: public, admin-level for everyone, or an inactive admin. <strong>Medium</strong>: every logged-in or licensed user. <strong>Could not verify</strong>: an area that was not fully read, for example after a time limit.</span></div>
+<div><b>Licence</b><span>Without an active licence or trial, Ledgerstone shows "Ledgerstone is not licensed on this site" with a link to Manage apps, and reads nothing from Jira.</span></div>
+<div><b>Data and uninstall</b><span>Ledgerstone stores counts and configuration names (schemes, filters, dashboards, groups, roles) for its last 12 runs, in Atlassian's cloud with your site's data residency. People's names are shown live and never stored. Uninstalling deletes everything it stored.</span></div>
+</div><p class="sub after">Questions? See <a href="/ledgerstone/support/">Support</a> or write to <a href="mailto:support@vestanabu.com">support@vestanabu.com</a>. We reply within two business days.</p></section>
 <section id="pricing" class="reveal"><p class="kicker">Pricing</p><h2>Simple pricing</h2><p class="sub">Billed through the Atlassian Marketplace. Every plan starts with a 30-day free trial.</p><div class="price">
 <div class="card"><h3>Small teams</h3><b>Free</b><p>Sites with up to 10 users.</p></div>
 <div class="card"><h3>Everyone else</h3><b>$1.50<small> / user / month</small></b><p>Same app, every feature. No tiers, no add-ons.</p></div></div></section></main>
