@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://atlapps.vestanabu.com/sitemap.xml
